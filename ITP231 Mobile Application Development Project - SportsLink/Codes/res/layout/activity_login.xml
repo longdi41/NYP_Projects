@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context="itp231.dba.nyp.com.teamsconqerevents.LoginActivity"
+android:orientation="vertical">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/tool_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+
+    <Button
+        android:paddingTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    android:id="@+id/signUp"
+    android:textColor="#eeeedb"
+    android:background="#FF4500"
+    android:layout_gravity="right" />
+
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="User Name:"
+    android:id="@+id/un_S" />
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:hint="Password:"
+    android:id="@+id/pass_S"/>
+
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="LogIn"
+    android:id="@+id/addButton"
+    android:textColor="#eeeedb"
+    android:background="#003b6f"
+    android:layout_marginTop="35dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TVmessage"/>
+
+</LinearLayout>

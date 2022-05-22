@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
+--
+-- Host: localhost    Database: itp232_teamevians
+-- ------------------------------------------------------
+-- Server version	5.7.16-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `yx_median_gross_salary_with_cpf`
+--
+
+DROP TABLE IF EXISTS `yx_median_gross_salary_with_cpf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `yx_median_gross_salary_with_cpf` (
+  `Occupations` text,
+  `Gender` text,
+  `Year` int(11) DEFAULT NULL,
+  `Salary` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yx_median_gross_salary_with_cpf`
+--
+
+LOCK TABLES `yx_median_gross_salary_with_cpf` WRITE;
+/*!40000 ALTER TABLE `yx_median_gross_salary_with_cpf` DISABLE KEYS */;
+INSERT INTO `yx_median_gross_salary_with_cpf` VALUES ('Managers & Administrators','Males',2007,6998),('Managers & Administrators','Males',2008,7512),('Managers & Administrators','Males',2009,7226),('Managers & Administrators','Males',2010,7203),('Managers & Administrators','Males',2011,8371),('Managers & Administrators','Males',2012,8971),('Managers & Administrators','Males',2013,9752),('Managers & Administrators','Males',2014,10614),('Managers & Administrators','Males',2015,10800),('Managers & Administrators','Females',2007,5594),('Managers & Administrators','Females',2008,6441),('Managers & Administrators','Females',2009,6216),('Managers & Administrators','Females',2010,5998),('Managers & Administrators','Females',2011,7168),('Managers & Administrators','Females',2012,7500),('Managers & Administrators','Females',2013,8169),('Managers & Administrators','Females',2014,9154),('Managers & Administrators','Females',2015,9379),('Working Proprietors','Males',2007,3000),('Working Proprietors','Males',2008,3000),('Working Proprietors','Males',2009,3000),('Working Proprietors','Males',2010,3000),('Working Proprietors','Males',2011,3000),('Working Proprietors','Males',2012,3375),('Working Proprietors','Males',2013,3575),('Working Proprietors','Males',2014,3500),('Working Proprietors','Males',2015,3938),('Working Proprietors','Females',2007,2500),('Working Proprietors','Females',2008,2500),('Working Proprietors','Females',2009,2500),('Working Proprietors','Females',2010,2500),('Working Proprietors','Females',2011,2500),('Working Proprietors','Females',2012,2925),('Working Proprietors','Females',2013,3000),('Working Proprietors','Females',2014,3000),('Working Proprietors','Females',2015,3000),('Professionals','Females',2007,3955),('Professionals','Females',2008,4523),('Professionals','Females',2009,4580),('Professionals','Females',2010,4723),('Professionals','Females',2011,5005),('Professionals','Females',2012,5220),('Professionals','Females',2013,5530),('Professionals','Females',2014,5800),('Professionals','Females',2015,6338),('Professionals','Males',2007,4896),('Professionals','Males',2008,5348),('Professionals','Males',2009,5410),('Professionals','Males',2010,5525),('Professionals','Males',2011,5960),('Professionals','Males',2012,6163),('Professionals','Males',2013,6525),('Professionals','Males',2014,6838),('Professionals','Males',2015,7313),('Associate Professionals & Technicians','Males',2007,3108),('Associate Professionals & Technicians','Males',2008,3435),('Associate Professionals & Technicians','Males',2009,3225),('Associate Professionals & Technicians','Males',2010,3225),('Associate Professionals & Technicians','Males',2011,3503),('Associate Professionals & Technicians','Males',2012,3770),('Associate Professionals & Technicians','Males',2013,3924),('Associate Professionals & Technicians','Males',2014,4060),('Associate Professionals & Technicians','Males',2015,4095),('Associate Professionals & Technicians','Females',2007,2938),('Associate Professionals & Technicians','Females',2008,3321),('Associate Professionals & Technicians','Females',2009,3340),('Associate Professionals & Technicians','Females',2010,3150),('Associate Professionals & Technicians','Females',2011,3558),('Associate Professionals & Technicians','Females',2012,3770),('Associate Professionals & Technicians','Females',2013,3828),('Associate Professionals & Technicians','Females',2014,3959),('Associate Professionals & Technicians','Females',2015,4056),('Clerical Support Workers','Males',2007,2034),('Clerical Support Workers','Males',2008,2138),('Clerical Support Workers','Males',2009,2110),('Clerical Support Workers','Males',2010,2155),('Clerical Support Workers','Males',2011,2252),('Clerical Support Workers','Males',2012,2366),('Clerical Support Workers','Males',2013,2514),('Clerical Support Workers','Males',2014,2514),('Clerical Support Workers','Males',2015,2662),('Clerical Support Workers','Females',2007,2184),('Clerical Support Workers','Females',2008,2357),('Clerical Support Workers','Females',2009,2357),('Clerical Support Workers','Females',2010,2420),('Clerical Support Workers','Females',2011,2487),('Clerical Support Workers','Females',2012,2605),('Clerical Support Workers','Females',2013,2706),('Clerical Support Workers','Females',2014,2696),('Clerical Support Workers','Females',2015,2867),('Service & Sales Workers','Males',2007,1705),('Service & Sales Workers','Males',2008,1861),('Service & Sales Workers','Males',2009,1832),('Service & Sales Workers','Males',2010,1947),('Service & Sales Workers','Males',2011,2002),('Service & Sales Workers','Males',2012,2088),('Service & Sales Workers','Males',2013,2262),('Service & Sales Workers','Males',2014,2320),('Service & Sales Workers','Males',2015,2340),('Service & Sales Workers','Females',2007,1347),('Service & Sales Workers','Females',2008,1374),('Service & Sales Workers','Females',2009,1472),('Service & Sales Workers','Females',2010,1500),('Service & Sales Workers','Females',2011,1617),('Service & Sales Workers','Females',2012,1685),('Service & Sales Workers','Females',2013,1856),('Service & Sales Workers','Females',2014,1862),('Service & Sales Workers','Females',2015,1901),('Craftsmen & Related Trades Workers','Males',2007,2000),('Craftsmen & Related Trades Workers','Males',2008,2025),('Craftsmen & Related Trades Workers','Males',2009,2239),('Craftsmen & Related Trades Workers','Males',2010,2347),('Craftsmen & Related Trades Workers','Males',2011,2342),('Craftsmen & Related Trades Workers','Males',2012,2416),('Craftsmen & Related Trades Workers','Males',2013,2533),('Craftsmen & Related Trades Workers','Males',2014,2514),('Craftsmen & Related Trades Workers','Males',2015,2662),('Craftsmen & Related Trades Workers','Females',2007,1271),('Craftsmen & Related Trades Workers','Females',2008,1263),('Craftsmen & Related Trades Workers','Females',2009,1400),('Craftsmen & Related Trades Workers','Females',2010,1356),('Craftsmen & Related Trades Workers','Females',2011,1431),('Craftsmen & Related Trades Workers','Females',2012,1500),('Craftsmen & Related Trades Workers','Females',2013,1490),('Craftsmen & Related Trades Workers','Females',2014,1853),('Craftsmen & Related Trades Workers','Females',2015,1775),('Plant & Machine Operators & Assemblers','Males',2007,1500),('Plant & Machine Operators & Assemblers','Males',2008,1625),('Plant & Machine Operators & Assemblers','Males',2009,1658),('Plant & Machine Operators & Assemblers','Males',2010,1718),('Plant & Machine Operators & Assemblers','Males',2011,1800),('Plant & Machine Operators & Assemblers','Males',2012,1853),('Plant & Machine Operators & Assemblers','Males',2013,2000),('Plant & Machine Operators & Assemblers','Males',2014,2000),('Plant & Machine Operators & Assemblers','Males',2015,2028),('Plant & Machine Operators & Assemblers','Females',2007,1102),('Plant & Machine Operators & Assemblers','Females',2008,1142),('Plant & Machine Operators & Assemblers','Females',2009,1145),('Plant & Machine Operators & Assemblers','Females',2010,1182),('Plant & Machine Operators & Assemblers','Females',2011,1246),('Plant & Machine Operators & Assemblers','Females',2012,1274),('Plant & Machine Operators & Assemblers','Females',2013,1434),('Plant & Machine Operators & Assemblers','Females',2014,1528),('Plant & Machine Operators & Assemblers','Females',2015,1600),('Cleaners, Labourers & Related Workers','Males',2007,1069),('Cleaners, Labourers & Related Workers','Males',2008,1088),('Cleaners, Labourers & Related Workers','Males',2009,1117),('Cleaners, Labourers & Related Workers','Males',2010,1180),('Cleaners, Labourers & Related Workers','Males',2011,1200),('Cleaners, Labourers & Related Workers','Males',2012,1149),('Cleaners, Labourers & Related Workers','Males',2013,1276),('Cleaners, Labourers & Related Workers','Males',2014,1331),('Cleaners, Labourers & Related Workers','Males',2015,1411),('Cleaners, Labourers & Related Workers','Females',2007,872),('Cleaners, Labourers & Related Workers','Females',2008,877),('Cleaners, Labourers & Related Workers','Females',2009,877),('Cleaners, Labourers & Related Workers','Females',2010,916),('Cleaners, Labourers & Related Workers','Females',2011,975),('Cleaners, Labourers & Related Workers','Females',2012,1012),('Cleaners, Labourers & Related Workers','Females',2013,1097),('Cleaners, Labourers & Related Workers','Females',2014,1197),('Cleaners, Labourers & Related Workers','Females',2015,1287);
+/*!40000 ALTER TABLE `yx_median_gross_salary_with_cpf` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-02-08  8:01:59

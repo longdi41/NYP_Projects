@@ -1,0 +1,59 @@
+-- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
+--
+-- Host: localhost    Database: itp232_teamevians
+-- ------------------------------------------------------
+-- Server version	5.7.16-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `yx_median_gross_income_with_cpf`
+--
+
+DROP TABLE IF EXISTS `yx_median_gross_income_with_cpf`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `yx_median_gross_income_with_cpf` (
+  `Year` text,
+  `2004` int(11) DEFAULT NULL,
+  `2007` int(11) DEFAULT NULL,
+  `2008` int(11) DEFAULT NULL,
+  `2009` int(11) DEFAULT NULL,
+  `2010` int(11) DEFAULT NULL,
+  `2011` int(11) DEFAULT NULL,
+  `2012` int(11) DEFAULT NULL,
+  `2013` int(11) DEFAULT NULL,
+  `2014` int(11) DEFAULT NULL,
+  `2015` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `yx_median_gross_income_with_cpf`
+--
+
+LOCK TABLES `yx_median_gross_income_with_cpf` WRITE;
+/*!40000 ALTER TABLE `yx_median_gross_income_with_cpf` DISABLE KEYS */;
+INSERT INTO `yx_median_gross_income_with_cpf` VALUES ('Year',2004,2007,2008,2009,2010,2011,2012,2013,2014,2015),('Total ',2326,2543,2897,2927,3000,3249,3480,3705,3770,3949),('Managers & Administrators',6121,6439,7084,6846,6653,7860,8450,9154,10000,10223),('Working Proprietors',2500,3000,3000,3000,3000,3000,3250,3390,3250,3500),('Professionals',4285,4520,5000,5000,5143,5538,5699,6090,6331,6825),('Associate Professionals & Technicians',2938,3056,3350,3300,3206,3511,3770,3895,4022,4095),('Clerical Support Workers',1997,2143,2290,2290,2357,2416,2523,2659,2630,2788),('Service & Sales Workers',1469,1500,1613,1625,1718,1822,1885,2050,2088,2106),('Craftsmen & \nRelated Trades Workers',1836,1958,1984,2150,2290,2310,2320,2512,2495,2535),('Plant & Machine Operators \n& Assemblers',1469,1469,1500,1500,1602,1700,1741,1868,1976,2000),('Cleaners, Labourers &\nRelated Workers',1000,954,993,997,1056,1063,1082,1149,1265,1344),('Males',2449,2750,3024,3000,3159,3441,3640,3915,4000,4118),('Managers & Administrators',6591,6998,7512,7226,7203,8371,8971,9752,10614,10800),('Working Proprietors',2500,3000,3000,3000,3000,3000,3375,3575,3500,3938),('Professionals',4572,4896,5348,5410,5525,5960,6163,6525,6838,7313),('Associate Professionals & Technicians',3060,3108,3435,3225,3225,3503,3770,3924,4060,4095),('Clerical Support Workers',1845,2034,2138,2110,2155,2252,2366,2514,2514,2535),('Service & Sales Workers',1695,1714,1861,1832,1947,2002,2088,2262,2320,2340),('Craftsmen & \nRelated Trades Workers',1836,2000,2025,2239,2347,2342,2416,2533,2514,2662),('Plant & Machine Operators \n& Assemblers',1526,1500,1625,1658,1718,1800,1853,2000,2000,2028),('Cleaners, Labourers &\nRelated Workers',1130,1074,1088,1117,1180,1200,1149,1276,1331,1411),('Females',2204,2449,2720,2754,2863,3099,3230,3480,3518,3744),('Managers & Administrators',5509,5594,6441,6216,5998,7168,7500,8169,9154,9379),('Working Proprietors',2000,2500,2500,2500,2500,2500,2925,3000,3000,3000),('Professionals',3673,3955,4523,4580,4723,5005,5220,5530,5800,6338),('Associate Professionals & Technicians',2825,2938,3321,3340,3150,3558,3770,3828,3959,4056),('Clerical Support Workers',2034,2184,2357,2357,2420,2487,2605,2706,2696,2867),('Service & Sales Workers',1243,1347,1374,1472,1500,1617,1685,1856,1862,1901),('Craftsmen & \nRelated Trades Workers',1224,1271,1263,1400,1356,1431,1500,1490,1853,1775),('Plant & Machine Operators \n& Assemblers',1041,1106,1142,1145,1182,1246,1274,1434,1528,1600),('Cleaners, Labourers &\nRelated Workers',904,880,877,877,916,975,1012,1097,1197,1287);
+/*!40000 ALTER TABLE `yx_median_gross_income_with_cpf` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-02-08  8:02:05
